@@ -33,7 +33,8 @@ public class Util
         while(it.hasNext())
         {
             s.append(it.next());
-            if(it.hasNext()) s.append(delimiter);
+            if(it.hasNext()) 
+                s.append(delimiter);
         }
         return s.toString();
     }
