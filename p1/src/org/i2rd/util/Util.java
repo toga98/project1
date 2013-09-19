@@ -8,7 +8,7 @@
  *  accordance with the terms of the license agreement you entered
  *  into with I2RD.
  */
-package p1;
+package org.i2rd.util;
 
 import java.util.Collection;
 import java.util.Iterator;
