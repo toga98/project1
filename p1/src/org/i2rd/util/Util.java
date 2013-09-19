@@ -21,6 +21,25 @@ public class Util
 {
 
     /**
+     * Convert the array to a string with the specified delimiter.
+     * @param array the array to convert.
+     * @param delimiter the delimiter.
+     * @return 
+     */
+    public static String toString(final Object[] array, final String delimiter)
+    {
+        final StringBuilder s = new StringBuilder();
+        for (int i = 0, ib = array.length-1; i <= ib; i++)
+        {
+            s.append(array[i]);
+            if(i < ib) 
+                s.append(delimiter);   
+        }
+        return s.toString();
+    }
+    
+    
+    /**
      * Convert the collection to a string with the specified delimiter.
      * @param collection the collection to convert.
      * @param delimiter the delimiter.
