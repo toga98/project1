@@ -14,15 +14,16 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /**
- * Type comment.
+ * Utility functions.
  * @author Russ Tennant (russ@i2rd.com)
  */
 public class Util
 {
 
     /**
-     * TODO
-     * @param string
+     * Convert the collection to a string with the specified delimiter.
+     * @param collection the collection to convert.
+     * @param delimiter the delimiter.
      * @return 
      */
     public static String toString(final Collection<? extends Object> collection, final String delimiter)
