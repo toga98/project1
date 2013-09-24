@@ -10,6 +10,9 @@
  */
 package org.i2rd.util;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.Reader;
 import java.util.Collection;
 import java.util.Iterator;
 
@@ -56,6 +59,23 @@ public class Util
                 s.append(delimiter);
         }
         return s.toString();
+    }
+    
+    /**
+     * Create a string representation of the specified reader.
+     * @param reader the reader.
+     * @return the string.
+     * @throws IOException on error reading.
+     */
+    public static String toString(Reader reader) throws IOException
+    {
+        final StringBuilder sb = new StringBuilder();
+        final BufferedReader br = new BufferedReader(reader);
+        char[] buf = new char[512];
+        int count = -1;
+        while((count = br.read(buf)) != -1)
+            sb.append(buf, 0, count);
+        return sb.toString();
     }
     
 }
