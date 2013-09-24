@@ -71,7 +71,7 @@ public class Util
     {
         final StringBuilder sb = new StringBuilder();
         final BufferedReader br = new BufferedReader(reader);
-        char[] buf = new char[512];
+        final char[] buf = new char[512];
         int count = -1;
         while((count = br.read(buf)) != -1)
             sb.append(buf, 0, count);
