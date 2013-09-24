@@ -24,7 +24,7 @@ public class Util
      * Convert the array to a string with the specified delimiter.
      * @param array the array to convert. asd
      * @param delimiter the delimiter.
-     * @return 
+     * @return the delimited string. 
      */
     public static String toString(final Object[] array, final String delimiter)
     {
@@ -43,7 +43,7 @@ public class Util
      * Convert the collection to a string with the specified delimiter.
      * @param collection the collection to convert.
      * @param delimiter the delimiter.
-     * @return 
+     * @return the delimited string.
      */
     public static String toString(final Collection<? extends Object> collection, final String delimiter)
     {
